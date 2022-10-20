@@ -9,7 +9,7 @@ public class EmailValidator implements ConstraintValidator<ValidEmail, CreateUse
 
     @Override
     public boolean isValid(CreateUserCommand command, ConstraintValidatorContext constraintValidatorContext) {
-        return command.getEmail().contains("@");
+        return command.getEmail().contains("@"); //létezik beépített Email validátor, a példa kedvéért ez itt egy egyszerű...
     }
 
     @Override
